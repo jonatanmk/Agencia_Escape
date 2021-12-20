@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Contato";
+}
+
+    <main>
+        <section class="container">
+            <div class="box">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="5c000c14-2996-46e0-a7d6-6fe1005dbfc1">
+                    <fieldset>
+                        <legend><b>Fale com a gente...</b></legend>
+                        <br>
+                        <div class="inputbox">
+                            <input type="text" name="name" id="nome" class="inputUser" required>
+                            <label for="nome" class="labelInput">Nome Completo</label>
+                        </div>
+                        <br><br>
+                        <div class="inputbox">
+                            <input type="text" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">Email</label>
+                        </div>
+                        <br><br>
+                        <div class="inputbox">
+                            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                            <label for="telefone" class="labelInput">Telefone</label>
+                        </div>
+                        <br><br>
+                        <div class="inputbox">
+                            <label for="data_nascimento"><b>Data de nascimento</b></label>
+                            <input type="date" name="data_nascimento" id="data_nascimento" required>
+                        </div>
+                        <br><br>
+                        <div class="inputbox">
+                            <textarea name="message" id="textarea" class="inputUser" rows="5" required></textarea>
+                            <label for="textarea" class="labelInput">Escreva aqui...</label>
+                        </div>
+                        <br><br>
+                        <input type="submit" name="submit" id="submit">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
